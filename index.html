@@ -1,10 +1,11 @@
 <!DOCTYPE html >
 <!-- #1 #structure #document -->
-<html>
+<html lang="en">
 <head>
 
     <!-- #1 #structure #title -->
     <title>chatter|app</title>
+
 
     <!-- We need to specify the character encoding, since we use chinese characters -->
     <meta charset="UTF-8">
@@ -46,12 +47,36 @@
             /* #2 #font capital #letters */
             text-transform: uppercase;
         }
+        div.a{
+           background-color: white;  /* three buttons in a container #class name "a" #background color: white */
+        }
+
+        /* each chat message grouped in different container with different class name #width change to 80% of the browser width*/
+        div.b{
+            width: 80%;
+        }
+        div.c{
+            width: 80%;
+        }
+        div.d{
+            width: 80%;
+        }
+        div.e{
+            width: 80%;
+        }
+        div.f{
+            width: 80%;
+        }
+        div.g{
+            width: 80%;
+        }
 
 
         /*styles for channel area*/
-        h2 {
+        ul {
             /* #2 #colorful #channelandchat */
             background-color: white;
+            list-style: none;
         }
 
         /*styles for chat area*/
@@ -63,6 +88,8 @@
         strong {
             /* #2 #font #locations need an extra element, we'll use strong for w3w locations */
             text-transform: uppercase;
+            
+
         }
 
         h3 {
@@ -75,6 +102,7 @@
             font-size: larger;
             font-style: normal;
         }
+        
 
     </style>
 
@@ -85,19 +113,26 @@
 <!-- channel area -->
 <!-- #1 #channels #app-bar -->
 <h1>chatter|app</h1>
+<img src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="Logo Picture">
+
 
 <!-- #1 #channels #topics -->
-<h2>#Yummy</h2>
-<h2>#SevenContinents</h2>
-<h2>#KillerApp</h2>
-<h2>#FirstPersonOnMars</h2>
-<h2>#Octoberfest</h2>
+<ul>
+    <!-- #image add with each channel topic -->
+    <li>#Yummy<img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="Icon Picture"></li>
+    <li>#SevenContinents<img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Icon Picture"></li>
+    <li>#KillerApp<img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="Icon Picture"></li>
+    <li>#FirstPersonOnMars<img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Icon Picture"></li>
+    <li>#Octoberfest<img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="Icon Picture"></li>
+</ul>
 
+<div class="a">
 <!-- #1 #channels #buttons -->
-<button>new</button>
-<button>trending</button>
-<button>favorites</button>
-
+<!-- #different images added with different buttons -->
+<button><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="Icon Picture">new</button>
+<button><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="Icon Picture">trending</button>
+<button><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Icon Picture">favorites</button>
+</div>
 
 <!-- chat area -->
 <!-- #1 #chat #name -->
@@ -109,10 +144,12 @@
     </small>
 </h1>
 
+<!-- different cintainers are marked as different class name-->
+<div class="b">
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>cheeses.yard.applies</strong>
+    <strong><a href="https://www.w3w.de/" target="_blank" style="color:black">cheeses.yard.applies</a></strong> <!-- w3w locations will open in a new tab -->
     Wed, June 20th, 13:37
     <!-- #1 #chat #ttl lives inside the metadata -->
     <em>15 min. left</em>
@@ -121,11 +158,14 @@
 <p>What's the place you folks call home?</p>
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
+</div>
 
+<!-- different cintainers are marked as different class name-->
+<div class="c">
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>truck.cotton.zone</strong>
+    <strong><a href="https://www.w3w.de/" target="_blank" style="color:black">truck.cotton.zone</a></strong> <!-- w3w locations will open in a new tab -->
     Wed, June 20th, 13:39
     <!-- #1 #chat #ttl lives inside the metadata -->
     <em>4 min. left</em>
@@ -134,11 +174,14 @@
 <p>BRISBANE! Hang loose!</p>
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
+</div>
 
+<!-- different cintainers are marked as different class name-->
+<div class="d">
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>thus.best.dishes</strong>
+    <strong><a href="https://www.w3w.de/" target="_blank" style="color:black">thus.best.dishes</a></strong> <!-- w3w locations will open in a new tab -->
     Wed, June 20th, 14:02
     <!-- #1 #chat #ttl lives inside the metadata -->
     <em>12 min. left</em>
@@ -147,11 +190,14 @@
 <p>The big apple.</p>
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
+</div>
 
+<!-- different cintainers are marked as different class name-->
+<div class="e">
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>driveway.helper.magazine</strong>
+    <strong><a href="https://www.w3w.de/" target="_blank" style="color:black">driveway.helper.magazine</a></strong> <!-- w3w locations will open in a new tab -->
     Wed, June 20th, 14:02
     <!-- #1 #chat #ttl lives inside the metadata -->
     <em>7 min. left</em>
@@ -160,11 +206,14 @@
 <p>Eu sou um Carocas.</p>
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
+</div>
 
+<!-- different cintainers are marked as different class name-->
+<div class="f">
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>escapes.pitch.saucepan</strong>
+    <strong><a href="https://www.w3w.de/" target="_blank" style="color:black">escapes.pitch.saucepan</a></strong> <!-- w3w locations will open in a new tab -->
     Wed, June 20th, 14:07
     <!-- #1 #chat #ttl lives inside the metadata -->
     <em>14 min. left</em>
@@ -173,11 +222,14 @@
 <p>Greetings from the western cape!</p>
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
+</div>
 
+<!-- different cintainers are marked as different class name-->
+<div class="g">
 <!-- #1 #chat #metadata contains location, weekday, day, and time  -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>meanings.identity.pays</strong>
+    <strong><a href="https://www.w3w.de/" target="_blank" style="color:black">meanings.identity.pays</a></strong> <!-- w3w locations will open in a new tab -->
     Wed, June 20th, 04:08
     <!-- #1 #chat #ttl lives inside the metadata -->
     <em>15 min. left</em>
@@ -186,6 +238,7 @@
 <p>北京</p>
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
+</div>
 
 </body>
 </html>
