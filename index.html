@@ -6,118 +6,22 @@
     <!-- #1 #structure #title -->
     <title>chatter|app</title>
 
-
+    
     <!-- We need to specify the character encoding, since we use chinese characters -->
     <meta charset="UTF-8">
-
-    <!-- #2 #css #elements -->
-    <style>
-
-        /* #2 #colorful #palette is:
-          * Background: #F5F5F5 (GREY 100)
-          * Primary Text: black
-
-          * Primary color: #3F51B5 (INDIGO)
-          * Primary color_text : white
-          * Accent color: #CDDC39 (LIME)
-          * Accent color_text: black
-          */
-
-        /*global styles */
-        * {
-            /* #2 #font #faces */
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            /* #2 #colorful #background */
-            background-color: #F5F5F5;
-        }
-
-        h1 {
-            /* #2 #colourful #app-bar */
-            background-color: #3F51B5;
-            color: white;
-        }
-
-        button {
-            /* #2 #colourful #plusfive */
-            background-color: #CDDC39;
-            color: black;
-            /* #2 #font capital #letters */
-            text-transform: uppercase;
-        }
-        div.a{
-           background-color: white;  /* three buttons in a container #class name "a" #background color: white */
-        }
-
-        /* each chat message grouped in different container with different class name #width change to 80% of the browser width*/
-        div.b{
-            width: 80%;
-        }
-        div.c{
-            width: 80%;
-        }
-        div.d{
-            width: 80%;
-        }
-        div.e{
-            width: 80%;
-        }
-        div.f{
-            width: 80%;
-        }
-        div.g{
-            width: 80%;
-        }
-
-
-        /*styles for channel area*/
-        ul {
-            /* #2 #colorful #channelandchat */
-            background-color: white;
-            list-style: none;
-        }
-
-        /*styles for chat area*/
-        p {
-            /* #2 #colorful #channelandchat */
-            background-color: white;
-        }
-
-        strong {
-            /* #2 #font #locations need an extra element, we'll use strong for w3w locations */
-            text-transform: uppercase;
-            
-
-        }
-
-        h3 {
-            /* #2 #font #metadata is now medium */
-            font-size: medium;
-        }
-
-        em {
-            /* #2 #font #remaining overrides the default italic appearance of em elements*/
-            font-size: larger;
-            font-style: normal;
-        }
-        
-
-    </style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <!-- channel area -->
 <!-- #1 #channels #app-bar -->
-<h1>chatter|app</h1>
-<img src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="Logo Picture">
+<h1 class="c"><img src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="Logo Picture">chatter|app</h1>
+
 
 
 <!-- #1 #channels #topics -->
-<ul>
+<ul id="tab-bar">
     <!-- #image add with each channel topic -->
     <li>#Yummy<img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="Icon Picture"></li>
     <li>#SevenContinents<img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Icon Picture"></li>
@@ -126,12 +30,12 @@
     <li>#Octoberfest<img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="Icon Picture"></li>
 </ul>
 
-<div class="a">
+<div class="b">
 <!-- #1 #channels #buttons -->
 <!-- #different images added with different buttons -->
-<button><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="Icon Picture">new</button>
-<button><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="Icon Picture">trending</button>
-<button><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Icon Picture">favorites</button>
+<button class = "selected"><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="Icon Picture"><br>new</button>
+<button class = "selected"><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="Icon Picture"><br>trending</button>
+<button class = "selected"><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Icon Picture"><br>favorites</button>
 </div>
 
 <!-- chat area -->
@@ -140,12 +44,12 @@
     <!-- #1 #chat #location is wrapped in small tag-->
     <small>by
         <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-        <strong>cheeses.yard.applies</strong>
+        <strong>cheeses.yard.applies <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Icon Picture"></strong>
     </small>
 </h1>
 
 <!-- different cintainers are marked as different class name-->
-<div class="b">
+<div class="message1">
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -155,13 +59,13 @@
     <em>15 min. left</em>
 </h3>
 <!-- #1 #chat #messages depict a short fictional chat-->
-<p>What's the place you folks call home?</p>
+<p class="a">What's the place you folks call home?</p>
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
 </div>
 
 <!-- different cintainers are marked as different class name-->
-<div class="c">
+<div class="message">
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -171,13 +75,13 @@
     <em>4 min. left</em>
 </h3>
 <!-- #1 #chat #messages depict a short fictional chat-->
-<p>BRISBANE! Hang loose!</p>
+<p class="a">BRISBANE! Hang loose!</p>
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
 </div>
 
 <!-- different cintainers are marked as different class name-->
-<div class="d">
+<div class="message">
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -187,13 +91,13 @@
     <em>12 min. left</em>
 </h3>
 <!-- #1 #chat #messages depict a short fictional chat-->
-<p>The big apple.</p>
+<p class="a">The big apple.</p>
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
 </div>
 
 <!-- different cintainers are marked as different class name-->
-<div class="e">
+<div class="message">
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -203,13 +107,13 @@
     <em>7 min. left</em>
 </h3>
 <!-- #1 #chat #messages depict a short fictional chat-->
-<p>Eu sou um Carocas.</p>
+<p class="a">Eu sou um Carocas.</p>
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
 </div>
 
 <!-- different cintainers are marked as different class name-->
-<div class="f">
+<div class="message">
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -219,13 +123,13 @@
     <em>14 min. left</em>
 </h3>
 <!-- #1 #chat #messages depict a short fictional chat-->
-<p>Greetings from the western cape!</p>
+<p class="a">Greetings from the western cape!</p>
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
 </div>
 
 <!-- different cintainers are marked as different class name-->
-<div class="g">
+<div class="message">
 <!-- #1 #chat #metadata contains location, weekday, day, and time  -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -235,7 +139,7 @@
     <em>15 min. left</em>
 </h3>
 <!-- #1 #chat #messages depict a short fictional chat-->
-<p>北京</p>
+<p class="a">北京</p>
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
 </div>

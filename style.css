@@ -1,0 +1,107 @@
+  /*global styles */
+  * {
+    /* #2 #font #faces */
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    
+}
+  /* #2 #colorful #palette is:
+          * Background: #F5F5F5 (GREY 100)
+          * Primary Text: black
+
+          * Primary color: #3F51B5 (INDIGO)
+          * Primary color_text : white
+          * Accent color: #CDDC39 (LIME)
+          * Accent color_text: black
+          */
+body {
+    /* #2 #colorful #background */
+    background-color: #F5F5F5;
+}
+
+/* #app-bar */
+h1 {
+    /* #2 #colourful #app-bar */
+    background-color: #3F51B5;
+    color: white;
+}
+button {
+    /* #2 #colourful #plusfive */
+    background-color: #CDDC39;
+    color: black;
+    /* #2 #font capital #letters */
+    text-transform: uppercase;
+}
+
+/*channel area*/
+  /*styles for channel area*/
+  #tab-bar {
+    /* #2 #colorful #channelandchat */
+    background-color: white;
+    list-style: none;
+}
+
+/*styles for chat area*/
+p {
+    /* #2 #colorful #channelandchat */
+    background-color: white;
+}
+
+strong {
+    /* #2 #font #locations need an extra element, we'll use strong for w3w locations */
+    text-transform: uppercase;
+    
+
+}
+
+h3 {
+    /* #2 #font #metadata is now medium */
+    font-size: medium;
+}
+em {
+    /* #2 #font #remaining overrides the default italic appearance of em elements*/
+    font-size: larger;
+    font-style: normal;
+}
+
+.message h3{
+    
+    color: black;
+}
+.message{
+    margin-left: 2.5%;
+}
+.message1{
+    margin-left: 17.5%;
+}
+.a{   
+width: 80%;
+margin-bottom: 8px;
+background-color: white;
+padding: 16px;
+}
+.b{
+    background-color: white;
+    padding: 8px;
+    
+}
+ /* new trending and favourite button color and border change */
+.b button{ 
+    background-color: white;
+    border: #F5F5F5;
+   margin-left: 16%;
+   margin-right: 10%;
+    font-size: 13px;
+}
+/* modified logo image by assiigning h1 as a new class c */
+.c img{
+width: 50px;
+height: 50px;
+
+}
+.b.selected{
+    
+    border-bottom-color: black;
+    border-bottom: 20px;
+}
